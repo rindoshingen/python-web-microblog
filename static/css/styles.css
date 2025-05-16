@@ -1,0 +1,152 @@
+:root {
+    --max-width: 640px;
+}
+
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Navigation styles */
+.navbar {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.navbar__brand {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.navbar__navigation-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+    color: #333;
+    list-style: none;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Main content styles */
+.main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Form styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.form__input {
+    width: 100%;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 0.15rem;
+    font-size: 1rem;
+}
+
+.form__textarea {
+    width: inherit;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-color: #e0e0e0;
+}
+
+.form__submit {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.15rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+/* Entry styles */
+.entry {
+    margin-top: 2rem;
+}
+
+.entry__title {
+    display: inline;
+    font-size: 1.1rem;
+}
+
+.entry__date {
+    color: #666;
+    font-size: 0.925rem;
+}
+
+.entry__content {
+    margin-top: 1rem;
+}
+
+/* Footer styles */
+.footer {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+    color: 333;
+}
+
+.footer__content .left {
+    margin-bottom: 1rem;
+}
+
+.footer__navigation-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: #0056b3;
+    }
+}
+
+@media (max-width: 392px) {
+    .footer__navigation-list {
+        flex-direction: column;
+        gap: 0.15rem;
+    }
+}
